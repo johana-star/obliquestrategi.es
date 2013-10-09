@@ -3,14 +3,7 @@ require 'sinatra/reloader'
 
 get '/' do
   @words = File.readlines("strategies.txt").sample
-	@words = make_it_sultry(@words)
 	haml :index
-end
-
-def make_it_sultry(words)
-	words = words.split(" ")
-	words.insert(rand*words.length, "<sub>")
-	words.join(" ")
 end
 
 __END__
