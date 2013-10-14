@@ -18,6 +18,8 @@ GEM
     builder (3.1.4)
     diff-lcs (1.2.4)
     erubis (2.7.0)
+    haml (4.0.3)
+      tilt
     i18n (0.6.5)
     minitest (4.7.5)
     multi_json (1.8.1)
@@ -57,6 +59,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack (~> 4.0.0)
+  haml (~> 4.0.3)
   rspec (~> 2.14.1)
   sinatra (~> 1.4.3)
   sinatra-reloader (~> 1.0)

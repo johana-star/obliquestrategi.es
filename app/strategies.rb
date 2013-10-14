@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
+require 'haml'
 
 get '/' do
   @words = File.readlines("strategies.txt").sample
